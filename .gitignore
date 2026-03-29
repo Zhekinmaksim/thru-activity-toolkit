@@ -1,0 +1,13 @@
+.DS_Store
+config/app.env
+config/account.txt
+config/proxy.txt
+config/proxies.txt
+config/keys.env
+counter-program/build/
+logs/
+state/
+scripts/__pycache__/
+*.pyc
+!logs/.gitkeep
+!state/.gitkeep
