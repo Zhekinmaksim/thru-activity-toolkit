@@ -1,0 +1,42 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091321"/>
+      <stop offset="1" stop-color="#122338"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <text x="90" y="100" fill="#F6F8FC" font-family="Avenir Next, Segoe UI, sans-serif" font-size="56" font-weight="700">Verified on-chain results</text>
+  <text x="90" y="150" fill="#91A6C1" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">Everything below came from the real Alphanet run, not a mockup.</text>
+
+  <rect x="90" y="210" width="1420" height="170" rx="28" fill="#111F33" stroke="#274767"/>
+  <text x="130" y="265" fill="#6EE7B7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">PROGRAM</text>
+  <text x="130" y="315" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="24">Seed: mycounter_20260329</text>
+  <text x="130" y="350" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="24">Program: tabF3aOHYG7CFyXjWYsLlLNEhBfvl8qPB0SHhuPBRja8yJ</text>
+
+  <rect x="90" y="420" width="685" height="235" rx="28" fill="#111F33" stroke="#274767"/>
+  <text x="130" y="475" fill="#38BDF8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">COUNTER</text>
+  <text x="130" y="525" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Account: ta2JpVS6l7BdwXs612BXDQ1ZqoJ8O99kJ6SEiXuA0EqhVo</text>
+  <text x="130" y="565" fill="#BFD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">Value after increment:</text>
+  <text x="130" y="620" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="64" font-weight="700">1</text>
+
+  <rect x="825" y="420" width="685" height="235" rx="28" fill="#111F33" stroke="#274767"/>
+  <text x="865" y="475" fill="#60A5FA" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">TOKEN</text>
+  <text x="865" y="525" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Ticker: TST202</text>
+  <text x="865" y="560" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Mint: taxzKuw5i6sQkH0gbx13C7c0SEfDJin4Mupsp7_Ttznt71</text>
+  <text x="865" y="595" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Account: taHgtGNt2NWkPnsm74lLJsJnCatlB9YYE2Yoy5a8sSlK1Y</text>
+
+  <rect x="90" y="695" width="1420" height="255" rx="28" fill="#111F33" stroke="#274767"/>
+  <text x="130" y="750" fill="#A78BFA" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">NAMESERVICE</text>
+  <text x="130" y="800" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Root: lab20260329</text>
+  <text x="130" y="835" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Subdomain: dev20260329</text>
+  <text x="130" y="870" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="23">Domain account: taih_vT8HFiMqN9HbKqygeErG1knk1ewDut-hOOF3JBWdJ</text>
+  <text x="130" y="915" fill="#BFD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">Record</text>
+  <text x="130" y="955" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="22">github =&gt; https://example.invalid/20260329063703-a4a7</text>
+
+  <rect x="90" y="1000" width="1420" height="110" rx="24" fill="#0D192A" stroke="#223A59"/>
+  <text x="130" y="1065" fill="#B7C4D6" font-family="Avenir Next, Segoe UI, sans-serif" font-size="27">
+    Repo: github.com/Zhekinmaksim/thru-activity-toolkit
+  </text>
+</svg>

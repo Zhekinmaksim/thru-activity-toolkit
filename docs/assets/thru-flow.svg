@@ -1,0 +1,71 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F8FC"/>
+      <stop offset="1" stop-color="#EAF0F8"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="100" y="110" fill="#13233B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="54" font-weight="700">What the toolkit actually does</text>
+  <text x="100" y="160" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26">A rerunnable Thru Alphanet flow with checks, retries, logs, and saved state.</text>
+
+  <line x1="170" y1="310" x2="1430" y2="310" stroke="url(#ink)" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="220" cy="310" r="52" fill="#123B6B"/>
+    <text x="202" y="324" fill="white" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">1</text>
+    <rect x="120" y="390" width="210" height="255" rx="26" fill="white" stroke="#D4DEEB"/>
+    <text x="150" y="445" fill="#0F2742" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">Setup</text>
+    <text x="150" y="490" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">CLI config</text>
+    <text x="150" y="525" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Key alias</text>
+    <text x="150" y="560" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">On-chain account</text>
+    <text x="150" y="595" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Toolchain + SDK</text>
+    <text x="150" y="630" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Faucet funding</text>
+  </g>
+
+  <g>
+    <circle cx="560" cy="310" r="52" fill="#18546D"/>
+    <text x="541" y="324" fill="white" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">2</text>
+    <rect x="455" y="390" width="210" height="255" rx="26" fill="white" stroke="#D4DEEB"/>
+    <text x="485" y="445" fill="#0F2742" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">Build</text>
+    <text x="485" y="490" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Compile C program</text>
+    <text x="485" y="525" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Produce binary</text>
+    <text x="485" y="560" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Keep local logs</text>
+  </g>
+
+  <g>
+    <circle cx="900" cy="310" r="52" fill="#0C5C73"/>
+    <text x="881" y="324" fill="white" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">3</text>
+    <rect x="795" y="390" width="210" height="255" rx="26" fill="white" stroke="#D4DEEB"/>
+    <text x="825" y="445" fill="#0F2742" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">Deploy</text>
+    <text x="825" y="490" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">RPC health check</text>
+    <text x="825" y="525" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Faucet request</text>
+    <text x="825" y="560" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Program upload</text>
+    <text x="825" y="595" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">State snapshot</text>
+  </g>
+
+  <g>
+    <circle cx="1240" cy="310" r="52" fill="#146A60"/>
+    <text x="1221" y="324" fill="white" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">4</text>
+    <rect x="1135" y="390" width="255" height="295" rx="26" fill="white" stroke="#D4DEEB"/>
+    <text x="1165" y="445" fill="#0F2742" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">Chain actions</text>
+    <text x="1165" y="490" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Counter create + inc</text>
+    <text x="1165" y="525" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Token mint + account</text>
+    <text x="1165" y="560" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Nameservice init</text>
+    <text x="1165" y="595" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Retry on flaky RPC</text>
+    <text x="1165" y="630" fill="#50627D" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Save logs and state</text>
+  </g>
+
+  <rect x="100" y="770" width="1400" height="135" rx="28" fill="#0E1C2E"/>
+  <text x="145" y="830" fill="#F6F8FC" font-family="Avenir Next, Segoe UI, sans-serif" font-size="34" font-weight="700">
+    The point is not just a successful deploy.
+  </text>
+  <text x="145" y="875" fill="#B7C4D6" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26">
+    The point is a path you can run again tomorrow without manually reconstructing what happened today.
+  </text>
+</svg>
