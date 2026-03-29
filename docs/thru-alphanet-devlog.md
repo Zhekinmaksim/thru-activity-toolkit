@@ -1,97 +1,86 @@
-# From Docs to Chain: Shipping a Real Thru Alphanet Workflow
+# From Setup to Chain: A Real Thru Alphanet Run
 
 ![Thru Alphanet Cover](./assets/thru-cover.svg)
 
-I spent this run doing something I usually trust other people to do for me: taking a fresh chain workflow from docs to a real on-chain result, fixing the rough edges along the way, and turning the whole thing into something I could rerun without dreading it.
+Most chain demos look clean because they end where the friction starts.
 
-This time the target was Thru Alphanet.
+You get a screenshot, a couple of commands, and a repo that nobody wants to rerun a week later.
 
-The goal was simple on paper:
+I wanted the opposite.
+
+So I took Thru Alphanet from a fresh local setup all the way to real on-chain state, fixed the rough edges I hit on the way, and turned the whole thing into a small toolkit I can actually use again.
+
+The flow I ended up shipping was simple enough to explain and annoying enough to matter:
 
 - set up the CLI and SDK
 - build a C program
 - deploy it
-- create and increment counter state
+- create counter state
+- increment that state on-chain
 - initialize a token mint and token account
 - register a nameservice entry
-
-In practice, it turned into the kind of session that tells you whether a stack is actually usable or whether it only looks good in a quickstart.
 
 Repository:
 [https://github.com/Zhekinmaksim/thru-activity-toolkit](https://github.com/Zhekinmaksim/thru-activity-toolkit)
 
-## What I Wanted to End Up With
+## Why I Turned It Into a Toolkit
 
-I did not want another one-off terminal transcript.
+I did not want a one-off terminal transcript.
 
-I wanted a small toolkit that could:
+I wanted a repo that could survive a second run without me re-learning the whole system from scratch.
 
-- set up a single local account cleanly
-- survive flaky RPC moments
-- retry network steps
-- keep logs and state between runs
-- let me build and deploy without repeating the same manual steps
-- test proxies separately without turning the repo into a multi-account spam tool
+That shaped the project more than the demo itself. The goal became:
 
-That became the shape of the repo.
+- one local account
+- clean setup
+- health checks before network actions
+- retries for flaky steps
+- saved logs and state after each run
+- proxy checks for connectivity, but not disguised account activity
+
+That is what the repo is now.
 
 ![Workflow Overview](./assets/thru-flow.svg)
 
-## What Actually Shipped
+## Where the Real Work Started
 
-By the end of the session, the toolkit handled:
+The official docs were a good starting point, but the useful part of the session was where documentation met actual tooling.
 
-- `setup`
-- `health-check`
-- `test-proxies`
-- `build`
-- `deploy`
-- `counter-create`
-- `counter-inc`
-- `token-init`
-- `nameservice-init`
+That is where the paper cuts showed up.
 
-The C counter program compiled, deployed, and ran on-chain. The token flow worked. The nameservice flow worked. The repo was pushed cleanly to GitHub.
+### The CLI surface had drifted
 
-The most useful part, though, was not the happy path. It was the friction I hit and had to remove.
+Some older examples still point to commands that do not exist on the installed CLI version. The quickest example was `keys show`.
 
-## The Rough Edges Were the Interesting Part
+It was not there.
 
-The current `thru-cli` behavior did not match every example I had seen.
+The available flow was built around `list`, `get`, `generate`, `add`, and `rm`, so the scripts had to be written against the CLI that was actually on the machine, not the one I hoped was there.
 
-That showed up immediately in a few places:
+### Alias and address were not interchangeable
 
-### 1. `keys show` was not available
+This is the sort of detail that sounds small until it breaks a run.
 
-Some examples still assume a `keys show` command. On the installed CLI version, the available key commands were `list`, `get`, `add`, `generate`, and `rm`.
+For a few token and nameservice steps, a local alias like `default` was not enough. The CLI wanted a real `ta...` address.
 
-That meant I had to stop treating old examples as canonical and start coding against the CLI that was actually on the machine.
+Once that was clear, the fix was obvious: resolve the alias once, save the public key, and feed the right form into the commands that need it.
 
-### 2. Token commands wanted real Thru addresses
+### A failed setup step was not actually a failed setup
 
-For token initialization, passing `default` as an alias was not enough for some arguments. The CLI expected real `ta...` addresses.
+On a repeated run, `account create` returned a nonce error.
 
-That is a small difference, but it is exactly the kind of thing that breaks an otherwise decent automation pass.
+That could have been treated as a dead stop, but the account already existed on-chain and was usable. The correct move was to verify state and continue, not blindly trust the first red line in the terminal.
 
-The fix was simple: resolve the local alias to the saved public key before calling token and nameservice steps that expect account pubkeys.
+### Success output still needed verification
 
-### 3. Account creation hit `NONCE_TOO_LOW`
+The nameservice flow gave me a good reminder here.
 
-This one was a good reminder that "failed" does not always mean "not usable."
+One record was created with the wrong templated value because of a bug in my own defaults. The command completed, but the state was wrong. I fixed the template and then corrected the record on-chain.
 
-`account create` returned a runtime nonce error on a repeated run, but the account already existed on-chain and was funded. So the correct behavior was not to keep pretending setup had failed. The correct behavior was to verify the account state and continue.
+That was a good checkpoint for the whole repo: command success is not the same thing as correct state.
 
-### 4. One nameservice record was created with a bad template value
+## What Landed On-Chain
 
-I found a bug in my own templating logic, where the default placeholder for the nameservice record value was malformed. The flow still completed, but the record value was wrong.
-
-That is exactly why I like doing full end-to-end verification instead of stopping at "command returned success."
-
-I fixed the code and then corrected the record on-chain.
-
-## The On-Chain Result
-
-The nice part: the chain state is real, not hypothetical.
+This part is real. No placeholders. No mock data.
 
 ![On-Chain Results](./assets/thru-results.svg)
 
@@ -120,61 +109,31 @@ The nice part: the chain state is real, not hypothetical.
 - Record:
   `github => https://example.invalid/20260329063703-a4a7`
 
-## Why the Toolkit Matters More Than the Demo
+## What I Actually Like About This Result
 
-The deployed addresses are useful, but the more important outcome is the path that produced them.
+The deployed addresses are useful, but the better outcome is the path that produced them.
 
-What I have now is something I can rerun.
-
-The repo keeps:
+The repo now keeps:
 
 - per-step logs
 - current state snapshots
 - run history
 - retry behavior
-- health checks before network actions
-- clean separation between single-run proxy checks and actual account activity
+- RPC health checks
+- resume support for repeated runs
 
-That may not sound glamorous, but it is the difference between a chain experiment and a developer tool you can keep using next week.
-
-## What I Like About Thru So Far
-
-The interesting part of this run was that once the inputs were correct, the chain did what it was supposed to do.
-
-The counter flow behaved cleanly.
-The token flow behaved cleanly.
-The nameservice flow behaved cleanly.
-
-The friction was mostly around real-world developer experience:
-
-- exact CLI surface area
-- argument expectations
-- recovery from partially completed state
-- verifying what happened after a command returns
-
-That is not a criticism as much as it is the normal work of early infrastructure. The difference is whether someone takes the time to absorb those paper cuts and turn them into a better path.
-
-That is what I wanted this repo to do.
-
-## If You Want to Use It
-
-The repo is here:
-
-[https://github.com/Zhekinmaksim/thru-activity-toolkit](https://github.com/Zhekinmaksim/thru-activity-toolkit)
-
-It is built around a single-account workflow and real chain verification, not fake screenshots and not theory.
-
-If you are building on Thru Alphanet and want a practical starting point for:
-
-- environment setup
-- C program deployment
-- state creation and execution
-- token initialization
-- nameservice setup
-- proxy reachability checks
-
-then this should save you a solid chunk of setup time.
-
-And if you run into the same rough edges I did, at least now they are written down in code.
+That may not be the flashy part, but it is the part that turns a testnet session into a repeatable developer workflow.
 
 ![Lessons Learned](./assets/thru-lessons.svg)
+
+## Final Take
+
+I like this kind of work because it removes pretending from the process.
+
+Instead of saying the docs "seem fine," you run the flow, hit the edges, fix what broke, and leave behind something sharper than what you started with.
+
+That is what this repo is meant to be: a practical single-account Thru Alphanet toolkit with real chain state behind it.
+
+If you are building on Thru and want a starting point for setup, deployment, counters, tokens, nameservice, and RPC or proxy checks, the repo is here:
+
+[https://github.com/Zhekinmaksim/thru-activity-toolkit](https://github.com/Zhekinmaksim/thru-activity-toolkit)

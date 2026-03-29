@@ -1,57 +1,76 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#08111F"/>
-      <stop offset="1" stop-color="#13243D"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="280" y1="140" x2="1320" y2="760" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F1B2E" stop-opacity="0.94"/>
-      <stop offset="1" stop-color="#162B45" stop-opacity="0.88"/>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081522"/>
+      <stop offset="1" stop-color="#102C46"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#6EE7B7"/>
       <stop offset="1" stop-color="#38BDF8"/>
     </linearGradient>
-    <filter id="shadow" x="240" y="100" width="1120" height="700" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#02060D" flood-opacity="0.45"/>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#01060B" flood-opacity="0.42"/>
     </filter>
   </defs>
 
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1370" cy="160" r="250" fill="#123B5B" fill-opacity="0.28"/>
-  <circle cx="220" cy="760" r="260" fill="#0A6B68" fill-opacity="0.18"/>
-  <circle cx="1260" cy="740" r="180" fill="#1D7EA7" fill-opacity="0.14"/>
+  <rect width="1600" height="900" fill="#07111C"/>
+  <rect x="42" y="42" width="1516" height="816" rx="34" fill="url(#bg)" stroke="#183A57"/>
+  <circle cx="1310" cy="160" r="220" fill="#103B62" fill-opacity="0.35"/>
+  <circle cx="220" cy="790" r="220" fill="#0B6A67" fill-opacity="0.14"/>
 
-  <path d="M130 210C330 120 525 125 710 205C900 290 1100 300 1470 130" stroke="#274866" stroke-width="2"/>
-  <path d="M60 320C290 240 480 255 675 340C860 420 1090 470 1510 300" stroke="#1E3B57" stroke-width="2"/>
-  <path d="M90 540C340 430 530 440 740 530C920 610 1130 670 1470 520" stroke="#1C4962" stroke-width="2"/>
+  <path d="M110 220C250 180 360 170 480 194C640 226 790 299 930 297C1070 296 1205 210 1490 120" stroke="#214766" stroke-width="2"/>
+  <path d="M100 305C235 274 378 279 503 322C650 373 792 432 942 423C1088 416 1228 355 1495 260" stroke="#1E3F5A" stroke-width="2"/>
+  <path d="M116 660C242 598 351 577 473 588C614 600 742 668 884 683C1064 703 1224 660 1498 555" stroke="#184C62" stroke-width="2"/>
 
   <g filter="url(#shadow)">
-    <rect x="280" y="140" width="1040" height="620" rx="34" fill="url(#panel)" stroke="#274767"/>
+    <rect x="106" y="96" width="816" height="708" rx="30" fill="#0C1828" fill-opacity="0.86" stroke="#21415B"/>
+    <rect x="966" y="152" width="528" height="560" rx="30" fill="#0D1D31" fill-opacity="0.9" stroke="#234869"/>
   </g>
 
-  <text x="360" y="250" fill="#95A9C5" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24" letter-spacing="3">THRU ALPHANET DEVLOG</text>
-  <text x="360" y="345" fill="#F5F7FB" font-family="Avenir Next, Segoe UI, sans-serif" font-size="66" font-weight="700">From Docs to Chain:</text>
-  <text x="360" y="422" fill="#F5F7FB" font-family="Avenir Next, Segoe UI, sans-serif" font-size="66" font-weight="700">Shipping a Real Workflow</text>
-  <text x="360" y="500" fill="#B4C2D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28">
-    setup → build → deploy → counter → token → nameservice
+  <text x="150" y="170" fill="#8EA5C2" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" letter-spacing="3">THRU ALPHANET DEVLOG</text>
+  <text x="150" y="268" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">From setup to chain</text>
+  <text x="150" y="336" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">without faking</text>
+  <text x="150" y="404" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">the hard parts</text>
+
+  <text x="150" y="474" fill="#BDD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="27">
+    I rebuilt the full path from docs to a real Alphanet result,
   </text>
-  <text x="360" y="550" fill="#B4C2D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28">
-    and fixing the rough edges along the way
+  <text x="150" y="512" fill="#BDD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="27">
+    fixed the paper cuts, and turned it into a rerunnable toolkit.
   </text>
 
-  <rect x="360" y="605" width="188" height="54" rx="27" fill="#15324B" stroke="#2D617E"/>
-  <rect x="566" y="605" width="214" height="54" rx="27" fill="#163949" stroke="#2D6D6A"/>
-  <rect x="798" y="605" width="192" height="54" rx="27" fill="#17324A" stroke="#35658B"/>
-  <rect x="1008" y="605" width="212" height="54" rx="27" fill="#15324B" stroke="#2D617E"/>
+  <rect x="150" y="570" width="190" height="52" rx="26" fill="#14334D" stroke="#2C6584"/>
+  <rect x="360" y="570" width="170" height="52" rx="26" fill="#163A47" stroke="#2B6D68"/>
+  <rect x="550" y="570" width="172" height="52" rx="26" fill="#143248" stroke="#33698F"/>
 
-  <text x="388" y="640" fill="#E9F8F3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="600">Program live</text>
-  <text x="594" y="640" fill="#ECFBF8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="600">Counter = 1</text>
-  <text x="826" y="640" fill="#ECF7FF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="600">Mint created</text>
-  <text x="1036" y="640" fill="#ECF7FF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="600">Domain registered</text>
+  <text x="182" y="603" fill="#ECF8F4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Program live</text>
+  <text x="395" y="603" fill="#EAFBF9" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Counter +1</text>
+  <text x="583" y="603" fill="#ECF7FF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Mint ready</text>
 
-  <rect x="360" y="694" width="860" height="2" fill="url(#accent)"/>
-  <text x="360" y="735" fill="#A8B9D1" font-family="Menlo, Monaco, monospace" font-size="22">
+  <rect x="150" y="680" width="620" height="2" fill="url(#accent)"/>
+  <text x="150" y="730" fill="#AFC3DB" font-family="Menlo, Monaco, monospace" font-size="22">
     github.com/Zhekinmaksim/thru-activity-toolkit
+  </text>
+
+  <rect x="1004" y="192" width="452" height="56" rx="16" fill="#13253B" stroke="#2C5A7E"/>
+  <circle cx="1043" cy="220" r="8" fill="#F97316"/>
+  <circle cx="1070" cy="220" r="8" fill="#FACC15"/>
+  <circle cx="1097" cy="220" r="8" fill="#34D399"/>
+  <text x="1132" y="228" fill="#B4C7DC" font-family="Menlo, Monaco, monospace" font-size="21">terminal / real run</text>
+
+  <text x="1012" y="302" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/setup.sh</text>
+  <text x="1012" y="344" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">account: default</text>
+  <text x="1012" y="378" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">sdk: installed</text>
+  <text x="1012" y="412" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">faucet: funded</text>
+
+  <text x="1012" y="482" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/deploy.sh</text>
+  <text x="1012" y="524" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">program: tabF3aOH...PBRja8yJ</text>
+
+  <text x="1012" y="594" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/counter-inc.sh</text>
+  <text x="1012" y="636" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">counter value: 1</text>
+
+  <rect x="1004" y="680" width="452" height="1" fill="url(#accent)"/>
+  <text x="1012" y="728" fill="#A8BED7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">
+    real deploy, real state, real fixes
   </text>
 </svg>

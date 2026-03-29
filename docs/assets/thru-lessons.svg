@@ -1,39 +1,48 @@
-<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFFDF8"/>
-      <stop offset="1" stop-color="#F6F2E7"/>
+      <stop offset="1" stop-color="#F4EFE4"/>
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="1000" fill="url(#bg)"/>
-  <text x="110" y="110" fill="#17233A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="56" font-weight="700">What this run taught me</text>
-  <text x="110" y="160" fill="#5B6880" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26">The real value was not the screenshot. It was the friction that had to be removed.</text>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1360" cy="130" r="140" fill="#E9DFCB"/>
+  <circle cx="220" cy="780" r="124" fill="#E3EEE7"/>
 
-  <rect x="110" y="240" width="420" height="470" rx="30" fill="#FFFFFF" stroke="#E1D8C7"/>
-  <text x="145" y="305" fill="#BC5C19" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">CLI drift is real</text>
-  <text x="145" y="360" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">`keys show` was not available</text>
-  <text x="145" y="400" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">on the installed CLI version.</text>
-  <text x="145" y="470" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">If you build from older examples</text>
-  <text x="145" y="505" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">without checking the actual command</text>
-  <text x="145" y="540" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">surface, your automation lies to you.</text>
+  <text x="90" y="102" fill="#18263A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="52" font-weight="700">What this run taught me</text>
+  <text x="90" y="145" fill="#65738A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">
+    The useful part was not the screenshot. It was the friction I had to remove.
+  </text>
 
-  <rect x="590" y="240" width="420" height="470" rx="30" fill="#FFFFFF" stroke="#DDE3EC"/>
-  <text x="625" y="305" fill="#1668A8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Alias ≠ address</text>
-  <text x="625" y="360" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">Some commands accept `default`.</text>
-  <text x="625" y="400" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">Some need a `ta...` pubkey.</text>
-  <text x="625" y="470" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">A decent toolkit resolves that once</text>
-  <text x="625" y="505" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">instead of making every script guess.</text>
+  <rect x="90" y="214" width="440" height="446" rx="30" fill="#FFFFFF" stroke="#E4D8C6"/>
+  <circle cx="146" cy="268" r="20" fill="#E37B31"/>
+  <text x="185" y="278" fill="#BB5B19" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">CLI drift is real</text>
+  <text x="130" y="352" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">Older examples assumed</text>
+  <text x="130" y="388" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">commands that were not present</text>
+  <text x="130" y="424" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">on the installed CLI.</text>
+  <text x="130" y="500" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">Automation gets honest only when it</text>
+  <text x="130" y="532" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">targets the tool that is actually on</text>
+  <text x="130" y="564" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">your machine today.</text>
 
-  <rect x="1070" y="240" width="420" height="470" rx="30" fill="#FFFFFF" stroke="#D7E7E0"/>
-  <text x="1105" y="305" fill="#0F766E" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Verify everything</text>
-  <text x="1105" y="360" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">The nameservice flow "worked"</text>
-  <text x="1105" y="400" fill="#3C465A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">before the record value was correct.</text>
-  <text x="1105" y="470" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">Success output is not the same thing</text>
-  <text x="1105" y="505" fill="#68758C" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">as correct state on-chain.</text>
+  <rect x="580" y="214" width="440" height="446" rx="30" fill="#FFFFFF" stroke="#D9E3EE"/>
+  <circle cx="636" cy="268" r="20" fill="#2C7AC4"/>
+  <text x="675" y="278" fill="#1667A8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Alias is not address</text>
+  <text x="620" y="352" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">Some steps accepted a local alias.</text>
+  <text x="620" y="388" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">Others needed the full `ta...` key.</text>
+  <text x="620" y="500" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">A good toolkit resolves that once</text>
+  <text x="620" y="532" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">and keeps every later step simple.</text>
 
-  <rect x="110" y="790" width="1380" height="120" rx="28" fill="#17233A"/>
-  <text x="150" y="860" fill="#F6F8FC" font-family="Avenir Next, Segoe UI, sans-serif" font-size="34" font-weight="700">
+  <rect x="1070" y="214" width="440" height="446" rx="30" fill="#FFFFFF" stroke="#D8E8E1"/>
+  <circle cx="1126" cy="268" r="20" fill="#1E8C71"/>
+  <text x="1165" y="278" fill="#117565" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Verify the state</text>
+  <text x="1110" y="352" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">One nameservice step finished with</text>
+  <text x="1110" y="388" fill="#334053" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">the wrong record value.</text>
+  <text x="1110" y="500" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">A green terminal line is not the same</text>
+  <text x="1110" y="532" fill="#6B778B" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22">thing as correct state on-chain.</text>
+
+  <rect x="90" y="734" width="1420" height="88" rx="26" fill="#18263A"/>
+  <text x="128" y="788" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="700">
     Shipping a chain workflow means turning fragile steps into repeatable behavior.
   </text>
 </svg>
