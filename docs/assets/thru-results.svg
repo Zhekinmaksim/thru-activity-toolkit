@@ -10,45 +10,47 @@
   <circle cx="1410" cy="142" r="168" fill="#13395A" fill-opacity="0.4"/>
   <circle cx="170" cy="860" r="140" fill="#0B6D69" fill-opacity="0.18"/>
 
-  <text x="90" y="104" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="52" font-weight="700">Verified on-chain results</text>
-  <text x="90" y="146" fill="#9AB0CA" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">
+  <text x="90" y="104" fill="#F7FAFD" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="44" font-weight="700" letter-spacing="-1">
+    VERIFIED ON-CHAIN RESULTS
+  </text>
+  <text x="90" y="146" fill="#9AB0CA" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="22">
     Everything here came from the real Alphanet run, not a mockup.
   </text>
 
   <rect x="90" y="196" width="660" height="280" rx="30" fill="#0F1D31" stroke="#254767"/>
-  <text x="128" y="248" fill="#6EE7B7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">PROGRAM</text>
-  <text x="128" y="294" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">seed</text>
-  <text x="128" y="326" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="20">mycounter_20260329</text>
-  <text x="128" y="380" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">program account</text>
-  <text x="128" y="412" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">tabF3aOHYG7CFyXjWYsLlLNEhBfvl8qPB0</text>
-  <text x="128" y="440" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">SHhuPBRja8yJ</text>
+  <text x="128" y="248" fill="#6EE7B7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="28" font-weight="700">PROGRAM</text>
+  <text x="128" y="294" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">seed</text>
+  <text x="128" y="326" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="20">mycounter_20260329</text>
+  <text x="128" y="380" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">program_account</text>
+  <text x="128" y="412" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">tabF3aOHYG7CFyXjWYsLlLNEhBfvl8qPB0</text>
+  <text x="128" y="440" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">SHhuPBRja8yJ</text>
 
   <rect x="850" y="196" width="660" height="280" rx="30" fill="#0F1D31" stroke="#254767"/>
-  <text x="888" y="248" fill="#38BDF8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">COUNTER</text>
-  <text x="888" y="294" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">counter account</text>
-  <text x="888" y="326" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">ta2JpVS6l7BdwXs612BXDQ1ZqoJ8O99kJ6S</text>
-  <text x="888" y="354" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">EiXuA0EqhVo</text>
-  <text x="888" y="402" fill="#AFC3DB" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">value after increment</text>
-  <text x="888" y="458" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="72" font-weight="700">1</text>
+  <text x="888" y="248" fill="#38BDF8" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="28" font-weight="700">COUNTER</text>
+  <text x="888" y="294" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">counter_account</text>
+  <text x="888" y="326" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">ta2JpVS6l7BdwXs612BXDQ1ZqoJ8O99kJ6S</text>
+  <text x="888" y="354" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">EiXuA0EqhVo</text>
+  <text x="888" y="402" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">value_after_increment</text>
+  <text x="888" y="458" fill="#FFFFFF" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="72" font-weight="700">1</text>
 
   <rect x="90" y="536" width="660" height="280" rx="30" fill="#0F1D31" stroke="#254767"/>
-  <text x="128" y="588" fill="#60A5FA" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">TOKEN</text>
-  <text x="128" y="634" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">ticker</text>
-  <text x="128" y="666" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="20">TST202</text>
-  <text x="128" y="718" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">mint</text>
-  <text x="128" y="750" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">taxzKuw5i6sQkH0gbx13C7c0SEfDJin4Mup</text>
-  <text x="128" y="778" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">sp7_Ttznt71</text>
+  <text x="128" y="588" fill="#60A5FA" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="28" font-weight="700">TOKEN</text>
+  <text x="128" y="634" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">ticker</text>
+  <text x="128" y="666" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="20">TST202</text>
+  <text x="128" y="718" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">mint</text>
+  <text x="128" y="750" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">taxzKuw5i6sQkH0gbx13C7c0SEfDJin4Mup</text>
+  <text x="128" y="778" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">sp7_Ttznt71</text>
 
   <rect x="850" y="536" width="660" height="280" rx="30" fill="#0F1D31" stroke="#254767"/>
-  <text x="888" y="588" fill="#A78BFA" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">NAMESERVICE</text>
-  <text x="888" y="634" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">root / subdomain</text>
-  <text x="888" y="666" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="20">lab20260329 / dev20260329</text>
-  <text x="888" y="718" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="18">record</text>
-  <text x="888" y="750" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">github =&gt; https://example.invalid/</text>
-  <text x="888" y="778" fill="#E7EEF7" font-family="Menlo, Monaco, monospace" font-size="19">20260329063703-a4a7</text>
+  <text x="888" y="588" fill="#A78BFA" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="28" font-weight="700">NAMESERVICE</text>
+  <text x="888" y="634" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">root_subdomain</text>
+  <text x="888" y="666" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="20">lab20260329 / dev20260329</text>
+  <text x="888" y="718" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">record</text>
+  <text x="888" y="750" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">github =&gt; https://example.invalid/</text>
+  <text x="888" y="778" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">20260329063703-a4a7</text>
 
   <rect x="90" y="866" width="1420" height="70" rx="22" fill="#0D1A2B" stroke="#213A57"/>
-  <text x="126" y="910" fill="#B4C7DC" font-family="Avenir Next, Segoe UI, sans-serif" font-size="25">
+  <text x="126" y="910" fill="#B4C7DC" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="23">
     Repo: github.com/Zhekinmaksim/thru-activity-toolkit
   </text>
 </svg>
