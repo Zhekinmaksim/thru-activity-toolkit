@@ -31,7 +31,7 @@
   <text x="888" y="326" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">ta2JpVS6l7BdwXs612BXDQ1ZqoJ8O99kJ6S</text>
   <text x="888" y="354" fill="#E7EEF7" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="19">EiXuA0EqhVo</text>
   <text x="888" y="402" fill="#AFC3DB" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="17">value_after_increment</text>
-  <text x="888" y="458" fill="#FFFFFF" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="72" font-weight="700">1</text>
+  <text x="888" y="430" fill="#EAF1F8" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="20" font-weight="500">1</text>
 
   <rect x="90" y="536" width="660" height="280" rx="30" fill="#0F1D31" stroke="#254767"/>
   <text x="128" y="588" fill="#60A5FA" font-family="SFMono-Regular, SF Mono, Menlo, Monaco, monospace" font-size="28" font-weight="700">TOKEN</text>
