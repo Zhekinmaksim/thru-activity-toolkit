@@ -1,0 +1,77 @@
+<svg width="2000" height="800" viewBox="0 0 2000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1880" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1624"/>
+      <stop offset="1" stop-color="#14314A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D4491A"/>
+      <stop offset="1" stop-color="#F3A53F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2000" height="800" fill="#0A1320"/>
+  <rect x="36" y="36" width="1928" height="728" rx="28" fill="url(#bg)" stroke="#23415C"/>
+
+  <rect x="88" y="92" width="1040" height="616" rx="24" fill="#101B2A" fill-opacity="0.78" stroke="#2A4661"/>
+  <rect x="1192" y="146" width="700" height="498" rx="24" fill="#0E1A29" fill-opacity="0.88" stroke="#2A4661"/>
+
+  <circle cx="1740" cy="132" r="210" fill="#1A3A58" fill-opacity="0.38"/>
+  <circle cx="176" cy="726" r="180" fill="#0E6B66" fill-opacity="0.18"/>
+
+  <path d="M90 214C290 165 430 157 590 187C734 214 860 272 1012 286C1166 300 1348 266 1868 116" stroke="#274866" stroke-width="2"/>
+  <path d="M78 586C286 518 432 504 578 522C738 542 868 598 1018 616C1196 638 1410 608 1886 442" stroke="#24536D" stroke-width="2"/>
+
+  <text x="132" y="152" fill="#B7C9DB" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="7">
+    THRU ALPHANET ARTICLE
+  </text>
+
+  <text x="132" y="278" fill="#F3EEE6" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" font-style="italic">
+    From Setup to Chain
+  </text>
+
+  <rect x="132" y="300" width="382" height="5" fill="url(#accent)"/>
+
+  <text x="132" y="372" fill="#D9E4EF" font-family="Georgia, 'Times New Roman', serif" font-size="32">
+    Real deploy, real state, real fixes.
+  </text>
+  <text x="132" y="418" fill="#D9E4EF" font-family="Georgia, 'Times New Roman', serif" font-size="32">
+    A practical Thru Alphanet run from fresh setup to verified results.
+  </text>
+
+  <rect x="132" y="492" width="308" height="42" rx="21" fill="#1A2D43" stroke="#385975"/>
+  <rect x="456" y="492" width="278" height="42" rx="21" fill="#2D2417" stroke="#7B5C2F"/>
+  <rect x="748" y="492" width="224" height="42" rx="21" fill="#17353E" stroke="#3A6E73"/>
+
+  <text x="162" y="519" fill="#F1F7FC" font-family="'Courier New', Courier, monospace" font-size="18">program live</text>
+  <text x="488" y="519" fill="#F9F2E7" font-family="'Courier New', Courier, monospace" font-size="18">counter = 1</text>
+  <text x="780" y="519" fill="#EAF8F5" font-family="'Courier New', Courier, monospace" font-size="18">mint ready</text>
+
+  <text x="132" y="630" fill="#AFBED0" font-family="'Courier New', Courier, monospace" font-size="24">
+    github.com/Zhekinmaksim/thru-activity-toolkit
+  </text>
+
+  <rect x="1240" y="184" width="604" height="54" rx="16" fill="#15263A" stroke="#355978"/>
+  <circle cx="1280" cy="211" r="8" fill="#F97316"/>
+  <circle cx="1308" cy="211" r="8" fill="#FACC15"/>
+  <circle cx="1336" cy="211" r="8" fill="#34D399"/>
+  <text x="1374" y="219" fill="#B9C9D8" font-family="'Courier New', Courier, monospace" font-size="20">x article / overview</text>
+
+  <text x="1248" y="312" fill="#F3EEE6" font-family="'Courier New', Courier, monospace" font-size="22">$ setup</text>
+  <text x="1248" y="350" fill="#D3DFEA" font-family="'Courier New', Courier, monospace" font-size="21">build</text>
+  <text x="1248" y="388" fill="#D3DFEA" font-family="'Courier New', Courier, monospace" font-size="21">deploy</text>
+  <text x="1248" y="426" fill="#D3DFEA" font-family="'Courier New', Courier, monospace" font-size="21">counter</text>
+  <text x="1248" y="464" fill="#D3DFEA" font-family="'Courier New', Courier, monospace" font-size="21">token</text>
+  <text x="1248" y="502" fill="#D3DFEA" font-family="'Courier New', Courier, monospace" font-size="21">nameservice</text>
+
+  <rect x="1518" y="294" width="286" height="250" rx="18" fill="#132437" stroke="#31516B"/>
+  <text x="1546" y="336" fill="#D4491A" font-family="'Courier New', Courier, monospace" font-size="18" letter-spacing="3">RESULTS</text>
+  <text x="1546" y="388" fill="#EAF2F9" font-family="'Courier New', Courier, monospace" font-size="18">program deployed</text>
+  <text x="1546" y="424" fill="#EAF2F9" font-family="'Courier New', Courier, monospace" font-size="18">counter incremented</text>
+  <text x="1546" y="460" fill="#EAF2F9" font-family="'Courier New', Courier, monospace" font-size="18">mint created</text>
+  <text x="1546" y="496" fill="#EAF2F9" font-family="'Courier New', Courier, monospace" font-size="18">domain registered</text>
+
+  <text x="1248" y="606" fill="#D8E4EE" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic">
+    Real run, cleaned up into something reusable.
+  </text>
+</svg>
