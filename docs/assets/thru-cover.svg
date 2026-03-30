@@ -1,76 +1,70 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#081522"/>
-      <stop offset="1" stop-color="#102C46"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#6EE7B7"/>
-      <stop offset="1" stop-color="#38BDF8"/>
-    </linearGradient>
-    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#01060B" flood-opacity="0.42"/>
-    </filter>
-  </defs>
+  <rect width="1600" height="900" fill="#F2EDE4"/>
 
-  <rect width="1600" height="900" fill="#07111C"/>
-  <rect x="42" y="42" width="1516" height="816" rx="34" fill="url(#bg)" stroke="#183A57"/>
-  <circle cx="1310" cy="160" r="220" fill="#103B62" fill-opacity="0.35"/>
-  <circle cx="220" cy="790" r="220" fill="#0B6A67" fill-opacity="0.14"/>
+  <!-- Grid lines - editorial feel -->
+  <line x1="0" y1="120" x2="1600" y2="120" stroke="#C8BFB0" stroke-width="1"/>
+  <line x1="0" y1="840" x2="1600" y2="840" stroke="#C8BFB0" stroke-width="1"/>
+  <line x1="80" y1="0" x2="80" y2="900" stroke="#C8BFB0" stroke-width="1"/>
+  <line x1="880" y1="0" x2="880" y2="900" stroke="#C8BFB0" stroke-width="1"/>
 
-  <path d="M110 220C250 180 360 170 480 194C640 226 790 299 930 297C1070 296 1205 210 1490 120" stroke="#214766" stroke-width="2"/>
-  <path d="M100 305C235 274 378 279 503 322C650 373 792 432 942 423C1088 416 1228 355 1495 260" stroke="#1E3F5A" stroke-width="2"/>
-  <path d="M116 660C242 598 351 577 473 588C614 600 742 668 884 683C1064 703 1224 660 1498 555" stroke="#184C62" stroke-width="2"/>
+  <!-- Big ink block left -->
+  <rect x="0" y="0" width="80" height="900" fill="#1A1209"/>
 
-  <g filter="url(#shadow)">
-    <rect x="106" y="96" width="816" height="708" rx="30" fill="#0C1828" fill-opacity="0.86" stroke="#21415B"/>
-    <rect x="966" y="152" width="528" height="560" rx="30" fill="#0D1D31" fill-opacity="0.9" stroke="#234869"/>
-  </g>
+  <!-- Issue / tag line -->
+  <text x="108" y="82" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="6" font-weight="400">THRU ALPHANET — DEVLOG</text>
 
-  <text x="150" y="170" fill="#8EA5C2" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" letter-spacing="3">THRU ALPHANET DEVLOG</text>
-  <text x="150" y="268" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">From setup to chain</text>
-  <text x="150" y="336" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">without faking</text>
-  <text x="150" y="404" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="62" font-weight="700">the hard parts</text>
+  <!-- Massive headline -->
+  <text x="108" y="250" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="100" font-weight="700" font-style="italic">From setup</text>
+  <text x="108" y="360" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="100" font-weight="700" font-style="italic">to chain.</text>
 
-  <text x="150" y="474" fill="#BDD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="27">
-    I rebuilt the full path from docs to a real Alphanet result,
-  </text>
-  <text x="150" y="512" fill="#BDD0E4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="27">
-    fixed the paper cuts, and turned it into a rerunnable toolkit.
-  </text>
+  <!-- Rule -->
+  <rect x="108" y="388" width="600" height="5" fill="#D4491A"/>
 
-  <rect x="150" y="570" width="190" height="52" rx="26" fill="#14334D" stroke="#2C6584"/>
-  <rect x="360" y="570" width="170" height="52" rx="26" fill="#163A47" stroke="#2B6D68"/>
-  <rect x="550" y="570" width="172" height="52" rx="26" fill="#143248" stroke="#33698F"/>
+  <!-- Subline -->
+  <text x="108" y="432" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-style="italic">Without faking the hard parts.</text>
 
-  <text x="182" y="603" fill="#ECF8F4" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Program live</text>
-  <text x="395" y="603" fill="#EAFBF9" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Counter +1</text>
-  <text x="583" y="603" fill="#ECF7FF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="600">Mint ready</text>
+  <!-- Body text block -->
+  <text x="108" y="490" fill="#4A3F33" font-family="Georgia, 'Times New Roman', serif" font-size="21">I rebuilt the full path from docs to a real Alphanet result,</text>
+  <text x="108" y="520" fill="#4A3F33" font-family="Georgia, 'Times New Roman', serif" font-size="21">fixed the paper cuts, and turned it into a rerunnable toolkit.</text>
 
-  <rect x="150" y="680" width="620" height="2" fill="url(#accent)"/>
-  <text x="150" y="730" fill="#AFC3DB" font-family="Menlo, Monaco, monospace" font-size="22">
-    github.com/Zhekinmaksim/thru-activity-toolkit
-  </text>
+  <!-- Tag pills — plain text version -->
+  <text x="108" y="590" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" letter-spacing="2">PROGRAM LIVE  ·  COUNTER +1  ·  MINT READY</text>
 
-  <rect x="1004" y="192" width="452" height="56" rx="16" fill="#13253B" stroke="#2C5A7E"/>
-  <circle cx="1043" cy="220" r="8" fill="#F97316"/>
-  <circle cx="1070" cy="220" r="8" fill="#FACC15"/>
-  <circle cx="1097" cy="220" r="8" fill="#34D399"/>
-  <text x="1132" y="228" fill="#B4C7DC" font-family="Menlo, Monaco, monospace" font-size="21">terminal / real run</text>
+  <!-- URL -->
+  <line x1="108" y1="616" x2="740" y2="616" stroke="#1A1209" stroke-width="2"/>
+  <text x="108" y="645" fill="#1A1209" font-family="'Courier New', Courier, monospace" font-size="20">github.com/Zhekinmaksim/thru-activity-toolkit</text>
 
-  <text x="1012" y="302" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/setup.sh</text>
-  <text x="1012" y="344" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">account: default</text>
-  <text x="1012" y="378" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">sdk: installed</text>
-  <text x="1012" y="412" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">faucet: funded</text>
+  <!-- Right panel — terminal block, raw -->
+  <rect x="900" y="120" width="700" height="720" fill="#1A1209"/>
 
-  <text x="1012" y="482" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/deploy.sh</text>
-  <text x="1012" y="524" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">program: tabF3aOH...PBRja8yJ</text>
+  <!-- Terminal header row -->
+  <rect x="900" y="120" width="700" height="52" fill="#2A2018"/>
+  <circle cx="940" cy="146" r="9" fill="#D4491A"/>
+  <circle cx="968" cy="146" r="9" fill="#D4A41A"/>
+  <circle cx="996" cy="146" r="9" fill="#4CAF50"/>
+  <text x="1032" y="152" fill="#7A6E62" font-family="'Courier New', Courier, monospace" font-size="18">terminal / real run</text>
 
-  <text x="1012" y="594" fill="#73E6BB" font-family="Menlo, Monaco, monospace" font-size="22">$ ./scripts/counter-inc.sh</text>
-  <text x="1012" y="636" fill="#DDE8F5" font-family="Menlo, Monaco, monospace" font-size="20">counter value: 1</text>
+  <!-- Terminal content -->
+  <text x="930" y="228" fill="#6EE7B7" font-family="'Courier New', Courier, monospace" font-size="22">$ ./scripts/setup.sh</text>
+  <text x="930" y="266" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">account: default</text>
+  <text x="930" y="298" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">sdk: installed</text>
+  <text x="930" y="330" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">faucet: funded</text>
 
-  <rect x="1004" y="680" width="452" height="1" fill="url(#accent)"/>
-  <text x="1012" y="728" fill="#A8BED7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="23">
-    real deploy, real state, real fixes
-  </text>
+  <text x="930" y="394" fill="#6EE7B7" font-family="'Courier New', Courier, monospace" font-size="22">$ ./scripts/deploy.sh</text>
+  <text x="930" y="432" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">program: tabF3aOH...PBRja8yJ</text>
+
+  <text x="930" y="496" fill="#6EE7B7" font-family="'Courier New', Courier, monospace" font-size="22">$ ./scripts/counter-inc.sh</text>
+  <text x="930" y="534" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">counter value: 1</text>
+
+  <text x="930" y="598" fill="#6EE7B7" font-family="'Courier New', Courier, monospace" font-size="22">$ ./scripts/mint-init.sh</text>
+  <text x="930" y="636" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">mint: taxzKuw...sp7_Ttznt71</text>
+  <text x="930" y="668" fill="#B8AA9A" font-family="'Courier New', Courier, monospace" font-size="19">status: ready</text>
+
+  <!-- bottom bar on terminal -->
+  <rect x="900" y="776" width="700" height="64" fill="#D4491A"/>
+  <text x="930" y="816" fill="#F2EDE4" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">real deploy, real state, real fixes</text>
+
+  <!-- bottom bar full width -->
+  <rect x="0" y="840" width="880" height="60" fill="#1A1209"/>
+  <text x="108" y="878" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="18" letter-spacing="1">ALPHANET · 2026 · OPEN SOURCE</text>
 </svg>

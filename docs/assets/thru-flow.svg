@@ -1,93 +1,92 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F4F7FB"/>
-      <stop offset="1" stop-color="#E8EEF8"/>
-    </linearGradient>
-    <linearGradient id="line" x1="120" y1="314" x2="1480" y2="314" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2C70A5"/>
-      <stop offset="1" stop-color="#18806E"/>
-    </linearGradient>
-  </defs>
+  <rect width="1600" height="900" fill="#F2EDE4"/>
 
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="1445" cy="108" r="156" fill="#D9E7F8"/>
-  <circle cx="164" cy="764" r="148" fill="#DCEFEA"/>
+  <!-- left ink bar -->
+  <rect x="0" y="0" width="80" height="900" fill="#1A1209"/>
 
-  <text x="90" y="102" fill="#16253A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="52" font-weight="700">What the toolkit actually runs</text>
-  <text x="90" y="145" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24">
-    A repeatable Thru Alphanet flow with checks, retries, logs, and state snapshots.
-  </text>
+  <!-- horizontal rules -->
+  <line x1="0" y1="120" x2="1600" y2="120" stroke="#C8BFB0" stroke-width="1"/>
+  <line x1="0" y1="270" x2="1600" y2="270" stroke="#1A1209" stroke-width="2"/>
+  <line x1="0" y1="820" x2="1600" y2="820" stroke="#1A1209" stroke-width="3"/>
 
-  <line x1="160" y1="286" x2="1440" y2="286" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Header -->
+  <text x="108" y="82" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="6">THRU ALPHANET — TOOLKIT FLOW</text>
 
-  <g>
-    <circle cx="180" cy="286" r="34" fill="#1E4F7A"/>
-    <text x="168" y="297" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="700">1</text>
-    <rect x="60" y="340" width="244" height="360" rx="28" fill="#FFFFFF" stroke="#D5DEEA"/>
-    <text x="92" y="395" fill="#152B46" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Setup</text>
-    <text x="92" y="440" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">CLI config</text>
-    <text x="92" y="472" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Key alias</text>
-    <text x="92" y="504" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Account create</text>
-    <text x="92" y="536" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">SDK install</text>
-    <text x="92" y="568" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Faucet request</text>
-    <rect x="92" y="612" width="114" height="36" rx="18" fill="#EAF2FB"/>
-    <text x="114" y="636" fill="#275C89" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" font-weight="600">foundation</text>
-  </g>
+  <text x="108" y="224" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" font-style="italic">What the toolkit runs</text>
 
-  <g>
-    <circle cx="455" cy="286" r="34" fill="#165770"/>
-    <text x="443" y="297" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="700">2</text>
-    <rect x="335" y="340" width="244" height="360" rx="28" fill="#FFFFFF" stroke="#D5DEEA"/>
-    <text x="367" y="395" fill="#152B46" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Build</text>
-    <text x="367" y="440" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Compile C code</text>
-    <text x="367" y="472" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Produce binary</text>
-    <text x="367" y="504" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Save local logs</text>
-    <rect x="367" y="612" width="94" height="36" rx="18" fill="#E7F3F1"/>
-    <text x="392" y="636" fill="#1D7568" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" font-weight="600">local</text>
-  </g>
+  <!-- Accent rule -->
+  <rect x="108" y="240" width="400" height="4" fill="#D4491A"/>
 
-  <g>
-    <circle cx="730" cy="286" r="34" fill="#0F6778"/>
-    <text x="718" y="297" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="700">3</text>
-    <rect x="610" y="340" width="244" height="360" rx="28" fill="#FFFFFF" stroke="#D5DEEA"/>
-    <text x="642" y="395" fill="#152B46" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Deploy</text>
-    <text x="642" y="440" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">RPC health check</text>
-    <text x="642" y="472" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Faucet request</text>
-    <text x="642" y="504" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Program upload</text>
-    <text x="642" y="536" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">State snapshot</text>
-    <rect x="642" y="612" width="126" height="36" rx="18" fill="#E9F6F5"/>
-    <text x="665" y="636" fill="#16706A" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" font-weight="600">networked</text>
-  </g>
+  <!-- Subline -->
+  <text x="108" y="258" fill="#4A3F33" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-style="italic">Repeatable. Checks, retries, logs, and state snapshots.</text>
 
-  <g>
-    <circle cx="1005" cy="286" r="34" fill="#157164"/>
-    <text x="993" y="297" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="700">4</text>
-    <rect x="885" y="340" width="244" height="360" rx="28" fill="#FFFFFF" stroke="#D5DEEA"/>
-    <text x="917" y="395" fill="#152B46" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Actions</text>
-    <text x="917" y="440" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Counter create</text>
-    <text x="917" y="472" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Counter increment</text>
-    <text x="917" y="504" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Token mint init</text>
-    <text x="917" y="536" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Nameservice init</text>
-    <rect x="917" y="612" width="114" height="36" rx="18" fill="#E7F4EE"/>
-    <text x="942" y="636" fill="#216C5F" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" font-weight="600">on-chain</text>
-  </g>
+  <!-- Step columns - brutalist approach, no rounded cards just ruled boxes -->
+  <!-- Step 1 -->
+  <rect x="108" y="286" width="258" height="480" fill="#1A1209"/>
+  <rect x="110" y="288" width="254" height="476" fill="#F2EDE4" stroke="#1A1209" stroke-width="2"/>
+  <text x="124" y="336" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">01</text>
+  <line x1="124" y1="348" x2="352" y2="348" stroke="#1A1209" stroke-width="2"/>
+  <text x="124" y="382" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Setup</text>
+  <text x="124" y="424" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">CLI config</text>
+  <text x="124" y="452" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Key alias</text>
+  <text x="124" y="480" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Account create</text>
+  <text x="124" y="508" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">SDK install</text>
+  <text x="124" y="536" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Faucet request</text>
+  <rect x="124" y="700" width="106" height="30" fill="#1A1209"/>
+  <text x="134" y="721" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1">foundation</text>
 
-  <g>
-    <circle cx="1280" cy="286" r="34" fill="#1A7D66"/>
-    <text x="1268" y="297" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="22" font-weight="700">5</text>
-    <rect x="1160" y="340" width="244" height="360" rx="28" fill="#FFFFFF" stroke="#D5DEEA"/>
-    <text x="1192" y="395" fill="#152B46" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">Verify</text>
-    <text x="1192" y="440" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Resume safely</text>
-    <text x="1192" y="472" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Retry on errors</text>
-    <text x="1192" y="504" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Keep run history</text>
-    <text x="1192" y="536" fill="#5A6D86" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20">Check final state</text>
-    <rect x="1192" y="612" width="96" height="36" rx="18" fill="#E5F5EF"/>
-    <text x="1216" y="636" fill="#1B6F61" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" font-weight="600">repeat</text>
-  </g>
+  <!-- Step 2 -->
+  <rect x="378" y="286" width="258" height="480" fill="#1A1209"/>
+  <rect x="380" y="288" width="254" height="476" fill="#F2EDE4" stroke="#1A1209" stroke-width="2"/>
+  <text x="394" y="336" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">02</text>
+  <line x1="394" y1="348" x2="622" y2="348" stroke="#1A1209" stroke-width="2"/>
+  <text x="394" y="382" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Build</text>
+  <text x="394" y="424" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Compile C code</text>
+  <text x="394" y="452" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Produce binary</text>
+  <text x="394" y="480" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Save local logs</text>
+  <rect x="394" y="700" width="60" height="30" fill="#1A1209"/>
+  <text x="404" y="721" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1">local</text>
 
-  <rect x="90" y="772" width="1420" height="82" rx="26" fill="#13233A"/>
-  <text x="130" y="823" fill="#F7FAFD" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="700">
-    One clean run matters less than having a path you can trust tomorrow.
-  </text>
+  <!-- Step 3 -->
+  <rect x="648" y="286" width="258" height="480" fill="#1A1209"/>
+  <rect x="650" y="288" width="254" height="476" fill="#F2EDE4" stroke="#1A1209" stroke-width="2"/>
+  <text x="664" y="336" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">03</text>
+  <line x1="664" y1="348" x2="892" y2="348" stroke="#1A1209" stroke-width="2"/>
+  <text x="664" y="382" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Deploy</text>
+  <text x="664" y="424" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">RPC health check</text>
+  <text x="664" y="452" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Faucet request</text>
+  <text x="664" y="480" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Program upload</text>
+  <text x="664" y="508" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">State snapshot</text>
+  <rect x="664" y="700" width="98" height="30" fill="#1A1209"/>
+  <text x="674" y="721" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1">networked</text>
+
+  <!-- Step 4 -->
+  <rect x="918" y="286" width="258" height="480" fill="#1A1209"/>
+  <rect x="920" y="288" width="254" height="476" fill="#F2EDE4" stroke="#1A1209" stroke-width="2"/>
+  <text x="934" y="336" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">04</text>
+  <line x1="934" y1="348" x2="1162" y2="348" stroke="#1A1209" stroke-width="2"/>
+  <text x="934" y="382" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Actions</text>
+  <text x="934" y="424" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Counter create</text>
+  <text x="934" y="452" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Counter increment</text>
+  <text x="934" y="480" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Token mint init</text>
+  <text x="934" y="508" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Nameservice init</text>
+  <rect x="934" y="700" width="80" height="30" fill="#1A1209"/>
+  <text x="944" y="721" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1">on-chain</text>
+
+  <!-- Step 5 -->
+  <rect x="1188" y="286" width="258" height="480" fill="#1A1209"/>
+  <rect x="1190" y="288" width="254" height="476" fill="#F2EDE4" stroke="#1A1209" stroke-width="2"/>
+  <text x="1204" y="336" fill="#D4491A" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">05</text>
+  <line x1="1204" y1="348" x2="1432" y2="348" stroke="#1A1209" stroke-width="2"/>
+  <text x="1204" y="382" fill="#1A1209" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">Verify</text>
+  <text x="1204" y="424" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Resume safely</text>
+  <text x="1204" y="452" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Retry on errors</text>
+  <text x="1204" y="480" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Keep run history</text>
+  <text x="1204" y="508" fill="#3D3428" font-family="Georgia, 'Times New Roman', serif" font-size="18">Check final state</text>
+  <rect x="1204" y="700" width="66" height="30" fill="#1A1209"/>
+  <text x="1214" y="721" fill="#F2EDE4" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1">repeat</text>
+
+  <!-- Bottom quote bar -->
+  <rect x="80" y="820" width="1520" height="80" fill="#D4491A"/>
+  <text x="108" y="870" fill="#F2EDE4" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-style="italic">One clean run matters less than having a path you can trust tomorrow.</text>
 </svg>
