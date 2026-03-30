@@ -5,15 +5,15 @@ From Setup to Chain
 
 ## Cover Image
 Use:
-`./assets/x-article-cover.svg`
+`./assets/x-article-cover.png`
 
-X recommends a `5:2` image ratio. This cover is prepared for that format.
+X recommends a `5:2` image ratio. This cover is prepared for that format and exported as `PNG` for upload compatibility.
 
 ## Insert Order
-1. Cover image: `./assets/x-article-cover.svg`
-2. After the "Toolkit Flow" section: `./assets/thru-flow.svg`
-3. After the "Verified On-Chain Results" section: `./assets/thru-results.svg`
-4. After the "What This Run Taught Me" section: `./assets/thru-lessons.svg`
+1. Cover image: `./assets/x-article-cover.png`
+2. After the "Toolkit Flow" section: `./assets/thru-flow.png`
+3. After the "Verified On-Chain Results" section: `./assets/thru-results.png`
+4. After the "What This Run Taught Me" section: `./assets/thru-lessons.png`
 
 ## Body
 Real deploy, real state, real fixes.
