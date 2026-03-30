@@ -4,11 +4,11 @@
 
 Real deploy, real state, real fixes.
 
-That was the point of this run.
+A lot of chain demos stay clean because they stop where the friction begins.
 
-Most chain demos stay clean because they stop right where the friction begins. You get a screenshot, a few commands, and a repo that nobody wants to rerun a week later.
+You get a screenshot, a few commands, and a repo nobody wants to rerun a week later.
 
-I wanted the opposite. I wanted to take Thru Alphanet from a fresh local setup to verified on-chain state, fix the rough edges along the way, and leave the result in a shape I could actually use again.
+I wanted to take Thru Alphanet from a fresh local setup to verified on-chain state, fix the rough edges along the way, and leave the result in a shape I could actually use again.
 
 The run covered:
 
@@ -25,7 +25,7 @@ Repository:
 
 ## Toolkit Flow
 
-I did not want a terminal transcript. I wanted a repeatable path.
+I was not trying to collect a pretty terminal transcript. I wanted a path I could rerun without re-learning the whole stack.
 
 That shaped the repo more than the demo itself. The goal became:
 
@@ -36,15 +36,15 @@ That shaped the repo more than the demo itself. The goal became:
 - saved logs and state after each run
 - proxy checks for connectivity, but not disguised account activity
 
-That is what the repo is now.
+That became the toolkit.
 
 ![Workflow Overview](./assets/thru-flow.svg)
 
 ## Where the Work Got Real
 
-The official docs were a good starting point. The useful part of the session was where the docs met the CLI that was actually installed and the chain state that was actually there.
+The official docs were a good starting point. The real work started when they met the CLI that was actually installed and the chain state that was actually there.
 
-That is where the paper cuts showed up.
+That is where small mismatches started to matter.
 
 ### The CLI surface had drifted
 
@@ -68,9 +68,9 @@ That could have been treated as a dead stop, but the account already existed on-
 
 ### Success output still needed verification
 
-One record was created with the wrong templated value because of a bug in my own defaults. The command completed, but the state was wrong. I fixed the template and then corrected the record on-chain.
+One record was created with the wrong templated value because of a bug in my own defaults. The command completed, but the state was wrong. I fixed the template and corrected the record on-chain.
 
-That was the best reminder in the whole run: command success is not the same thing as correct state.
+That was the clearest reminder in the run: command success is not the same thing as correct state.
 
 ## Verified On-Chain Results
 
@@ -105,7 +105,7 @@ This part is real. No placeholders. No mock data.
 
 ## Why This Result Matters
 
-The deployed addresses are useful, but the better outcome is the path that produced them.
+The deployed addresses are useful. The path that produced them matters just as much.
 
 The repo now keeps:
 
@@ -116,18 +116,18 @@ The repo now keeps:
 - RPC health checks
 - resume support for repeated runs
 
-That is the difference between a one-time testnet session and a workflow you can trust on the next run too.
+That is what turns a one-time testnet session into a workflow you can trust on the next run too.
 
 ![Lessons Learned](./assets/thru-lessons.svg)
 
 ## What This Run Taught Me
 
-The most useful outcome was not the screenshot. It was the cleanup.
+The screenshot is fine. The cleanup work behind it matters more.
 
 Instead of saying the docs "seem fine," you run the flow, hit the edges, fix what broke, and leave behind something sharper than what you started with.
 
 That is what this repo is meant to be: a practical single-account Thru Alphanet toolkit with real chain state behind it.
 
-If you are building on Thru and want a starting point for setup, deployment, counters, tokens, nameservice, and RPC or proxy checks, the repo is here:
+If you're building on Thru, the repo is here:
 
 [https://github.com/Zhekinmaksim/thru-activity-toolkit](https://github.com/Zhekinmaksim/thru-activity-toolkit)
