@@ -1,16 +1,16 @@
-# From Setup to Chain: A Real Thru Alphanet Run
+# From Setup to Chain
 
 ![Thru Alphanet Cover](./assets/thru-cover.svg)
 
-Most chain demos look clean because they end where the friction starts.
+Real deploy, real state, real fixes.
 
-You get a screenshot, a couple of commands, and a repo that nobody wants to rerun a week later.
+That was the point of this run.
 
-I wanted the opposite.
+Most chain demos stay clean because they stop right where the friction begins. You get a screenshot, a few commands, and a repo that nobody wants to rerun a week later.
 
-So I took Thru Alphanet from a fresh local setup all the way to real on-chain state, fixed the rough edges I hit on the way, and turned the whole thing into a small toolkit I can actually use again.
+I wanted the opposite. I wanted to take Thru Alphanet from a fresh local setup to verified on-chain state, fix the rough edges along the way, and leave the result in a shape I could actually use again.
 
-The flow I ended up shipping was simple enough to explain and annoying enough to matter:
+The run covered:
 
 - set up the CLI and SDK
 - build a C program
@@ -23,13 +23,11 @@ The flow I ended up shipping was simple enough to explain and annoying enough to
 Repository:
 [https://github.com/Zhekinmaksim/thru-activity-toolkit](https://github.com/Zhekinmaksim/thru-activity-toolkit)
 
-## Why I Turned It Into a Toolkit
+## Toolkit Flow
 
-I did not want a one-off terminal transcript.
+I did not want a terminal transcript. I wanted a repeatable path.
 
-I wanted a repo that could survive a second run without me re-learning the whole system from scratch.
-
-That shaped the project more than the demo itself. The goal became:
+That shaped the repo more than the demo itself. The goal became:
 
 - one local account
 - clean setup
@@ -42,9 +40,9 @@ That is what the repo is now.
 
 ![Workflow Overview](./assets/thru-flow.svg)
 
-## Where the Real Work Started
+## Where the Work Got Real
 
-The official docs were a good starting point, but the useful part of the session was where documentation met actual tooling.
+The official docs were a good starting point. The useful part of the session was where the docs met the CLI that was actually installed and the chain state that was actually there.
 
 That is where the paper cuts showed up.
 
@@ -54,31 +52,27 @@ Some older examples still point to commands that do not exist on the installed C
 
 It was not there.
 
-The available flow was built around `list`, `get`, `generate`, `add`, and `rm`, so the scripts had to be written against the CLI that was actually on the machine, not the one I hoped was there.
+The available flow was built around `list`, `get`, `generate`, `add`, and `rm`, so the scripts had to be written against the CLI on the machine, not the one older examples seemed to assume.
 
 ### Alias and address were not interchangeable
 
-This is the sort of detail that sounds small until it breaks a run.
-
 For a few token and nameservice steps, a local alias like `default` was not enough. The CLI wanted a real `ta...` address.
 
-Once that was clear, the fix was obvious: resolve the alias once, save the public key, and feed the right form into the commands that need it.
+Once that was clear, the fix was straightforward: resolve the alias once, save the public key, and feed the right value into the commands that actually need it.
 
 ### A failed setup step was not actually a failed setup
 
 On a repeated run, `account create` returned a nonce error.
 
-That could have been treated as a dead stop, but the account already existed on-chain and was usable. The correct move was to verify state and continue, not blindly trust the first red line in the terminal.
+That could have been treated as a dead stop, but the account already existed on-chain and was usable. The right move was to verify state and continue, not blindly trust the first red line in the terminal.
 
 ### Success output still needed verification
 
-The nameservice flow gave me a good reminder here.
-
 One record was created with the wrong templated value because of a bug in my own defaults. The command completed, but the state was wrong. I fixed the template and then corrected the record on-chain.
 
-That was a good checkpoint for the whole repo: command success is not the same thing as correct state.
+That was the best reminder in the whole run: command success is not the same thing as correct state.
 
-## What Landed On-Chain
+## Verified On-Chain Results
 
 This part is real. No placeholders. No mock data.
 
@@ -109,7 +103,7 @@ This part is real. No placeholders. No mock data.
 - Record:
   `github => https://example.invalid/20260329063703-a4a7`
 
-## What I Actually Like About This Result
+## Why This Result Matters
 
 The deployed addresses are useful, but the better outcome is the path that produced them.
 
@@ -122,13 +116,13 @@ The repo now keeps:
 - RPC health checks
 - resume support for repeated runs
 
-That may not be the flashy part, but it is the part that turns a testnet session into a repeatable developer workflow.
+That is the difference between a one-time testnet session and a workflow you can trust on the next run too.
 
 ![Lessons Learned](./assets/thru-lessons.svg)
 
-## Final Take
+## What This Run Taught Me
 
-I like this kind of work because it removes pretending from the process.
+The most useful outcome was not the screenshot. It was the cleanup.
 
 Instead of saying the docs "seem fine," you run the flow, hit the edges, fix what broke, and leave behind something sharper than what you started with.
 
