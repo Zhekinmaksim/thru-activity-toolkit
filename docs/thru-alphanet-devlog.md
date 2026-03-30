@@ -4,11 +4,9 @@
 
 Real deploy, real state, real fixes.
 
-A lot of chain demos stay clean because they stop where the friction begins.
+I wanted a run I could repeat, not a screenshot I could post once.
 
-You get a screenshot, a few commands, and a repo nobody wants to rerun a week later.
-
-I wanted to take Thru Alphanet from a fresh local setup to verified on-chain state, fix the rough edges along the way, and leave the result in a shape I could actually use again.
+So I took Thru Alphanet from a fresh local setup to verified on-chain state, fixed the places where the docs and the live tooling disagreed, and turned the result into a small toolkit I can actually reuse.
 
 The run covered:
 
@@ -25,9 +23,9 @@ Repository:
 
 ## Toolkit Flow
 
-I was not trying to collect a pretty terminal transcript. I wanted a path I could rerun without re-learning the whole stack.
+I was not trying to save a pretty terminal log. I wanted a setup I could come back to next week and still trust.
 
-That shaped the repo more than the demo itself. The goal became:
+That pushed the repo in a practical direction:
 
 - one local account
 - clean setup
@@ -42,15 +40,13 @@ That became the toolkit.
 
 ## Where the Work Got Real
 
-The official docs were a good starting point. The real work started when they met the CLI that was actually installed and the chain state that was actually there.
-
-That is where small mismatches started to matter.
+The docs helped. The useful part started when the commands hit a real machine and a real chain.
 
 ### The CLI surface had drifted
 
 Some older examples still point to commands that do not exist on the installed CLI version. The quickest example was `keys show`.
 
-It was not there.
+It simply was not there.
 
 The available flow was built around `list`, `get`, `generate`, `add`, and `rm`, so the scripts had to be written against the CLI on the machine, not the one older examples seemed to assume.
 
@@ -64,17 +60,17 @@ Once that was clear, the fix was straightforward: resolve the alias once, save t
 
 On a repeated run, `account create` returned a nonce error.
 
-That could have been treated as a dead stop, but the account already existed on-chain and was usable. The right move was to verify state and continue, not blindly trust the first red line in the terminal.
+That could have stopped the whole setup, but the account already existed on-chain and was usable. The right move was to verify state and continue, not blindly trust the first red line in the terminal.
 
 ### Success output still needed verification
 
-One record was created with the wrong templated value because of a bug in my own defaults. The command completed, but the state was wrong. I fixed the template and corrected the record on-chain.
+The nameservice flow exposed the same thing from the other side. A record was created with the wrong templated value because of a bug in my own defaults. The command completed. The state was wrong. I fixed the template and corrected the record on-chain.
 
-That was the clearest reminder in the run: command success is not the same thing as correct state.
+That was the clearest reminder in the whole run: command success is not the same thing as correct state.
 
 ## Verified On-Chain Results
 
-This part is real. No placeholders. No mock data.
+These are the addresses from the run.
 
 ![On-Chain Results](./assets/thru-results.svg)
 
@@ -105,7 +101,7 @@ This part is real. No placeholders. No mock data.
 
 ## Why This Result Matters
 
-The deployed addresses are useful. The path that produced them matters just as much.
+The addresses are useful. The more important part is that the path to get them is now boring in a good way.
 
 The repo now keeps:
 
@@ -116,17 +112,17 @@ The repo now keeps:
 - RPC health checks
 - resume support for repeated runs
 
-That is what turns a one-time testnet session into a workflow you can trust on the next run too.
+That is what makes the whole thing reusable.
 
 ![Lessons Learned](./assets/thru-lessons.svg)
 
 ## What This Run Taught Me
 
-The screenshot is fine. The cleanup work behind it matters more.
+What I got out of this run was not the screenshot. It was the cleanup work behind it.
 
-Instead of saying the docs "seem fine," you run the flow, hit the edges, fix what broke, and leave behind something sharper than what you started with.
+You only really learn a stack by running the flow, finding the weak spots, and fixing the boring parts nobody screenshots.
 
-That is what this repo is meant to be: a practical single-account Thru Alphanet toolkit with real chain state behind it.
+That is what this repo is now: a practical single-account Thru Alphanet toolkit with real chain state behind it.
 
 If you're building on Thru, the repo is here:
 
